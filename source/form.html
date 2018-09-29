@@ -5,7 +5,6 @@
     <title>HTML Academy: Пинк - конкурс</title>
   </head>
   <body>
-
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html">
         <img class="logo__image" src="#" alt="Логотоип Пинк" width="75" height="22">
@@ -14,29 +13,33 @@
       <nav class="main-nav">
         <button class="main-nav__togle main-nav__togle--close" type="button" name="togle-close-open">Закрыть или открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">Конкурс</a>
+            <a class="site-list__link site-list__item--active">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" lang="en">HTML Academy</a>
           </li>
         </ul>
       </nav>
+
+      <div class="page-header__header page-title">
+        <h1 class="page-title__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
 
     <main class="page-main">
       <header class="promo-game">
-        <h1 class="promo-game__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="promo-game__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
       </header>
 
       <section class="page-main__form">
+        <h2 class="visually-hidden">Форма конкурса</h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__registration registration">
             <legend class="visually-hidden">Регистрация в конкурсе</legend>

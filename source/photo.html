@@ -5,7 +5,6 @@
     <title>HTML Academy: Пинк - конкурс</title>
   </head>
   <body>
-
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html">
         <img class="logo__image" src="#" alt="Логотоип Пинк" width="75" height="22">
@@ -14,25 +13,28 @@
       <nav class="main-nav">
         <button class="main-nav__togle main-nav__togle--close" type="button" name="togle-close-open">Закрыть или открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
+            <a class="site-list__link site-list__item--active">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" lang="en">HTML Academy</a>
           </li>
         </ul>
       </nav>
+
+      <div class="page-header__header page-title">
+        <h1 class="page-title__heading">Фотографии пользователей</h1>
+      </div>
     </header>
 
     <main class="page-main">
       <header class="promo-other">
-        <h1 class="promo-other__title">Фотографии пользователей</h1>
         <p class="promo-other__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </header>
 
@@ -209,6 +211,10 @@
           </div>
         </div>
 
+        <footer class="your-photo__footer">
+          <button class="button button--upload" type="button" name="button">Запостить</button>
+          <button class="button button--cancel" type="button" name="button">Отмена</button>
+        </footer>
       </section>
     </main>
 
