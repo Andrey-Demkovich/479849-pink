@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк - конкурс</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="#" alt="Логотоип Пинк" width="75" height="22">
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__togle main-nav__togle--close" type="button" name="togle-close-open">Закрыть или открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__item--active">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" lang="en">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-header__header page-title">
+        <h1 class="page-title__heading">Фотографии пользователей</h1>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <header class="promo-other">
+        <p class="promo-other__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </header>
+
+      <ul class="photo-posts__list">
+        <li class="photo-posts__item">
+          <article class="photo-posts__card post">
+            <header class="post__header">
+              <img class="post__image" src="#" alt="фото пользователя">
+              <strong class="post__panorama">Панорама дня</strong>
+            </header>
+            <div class="post__content">
+              <h2 class="post__author">
+                Анна
+                <time datetime="2018-09-29T11:50">(5 минут назад)</time>
+              </h2>
+              <p class="post__comentary">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы!
+              </p>
+            </div>
+            <footer class="post__footer">
+              <p class="post__like">Нравится: <output class="post__like-output" name="result">215</output></p>
+            </footer>
+          </article>
+        </li>
+
+        <li class="photo-posts__item">
+          <article class="photo-posts__card post">
+            <header class="post__header">
+              <img class="post__image" src="#" alt="фото пользователя">
+            </header>
+            <div class="post__content">
+              <h2 class="post__author">
+                Левон
+                <time datetime="2018-09-29T06:50">(5 часов назад)</time>
+              </h2>
+              <p class="post__comentary">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+            </div>
+            <footer class="post__footer">
+              <p class="post__like">Нравится: <output class="post__like-output" name="result">356</output></p>
+            </footer>
+          </article>
+        </li>
+
+        <li class="photo-posts__item">
+          <article class="photo-posts__card post">
+            <header class="post__header">
+              <img class="post__image" src="#" alt="фото пользователя">
+            </header>
+            <div class="post__content">
+              <h2 class="post__author">
+                Антон
+                <time datetime="2018-09-28T22:50">(12 часов назад)</time>
+              </h2>
+              <p class="post__comentary">
+                Соседи будут рады!
+              </p>
+            </div>
+            <footer class="post__footer">
+              <p class="post__like">Нравится: <output class="post__like-output" name="result">666</output></p>
+            </footer>
+          </article>
+        </li>
+
+        <li class="photo-posts__item">
+          <article class="photo-posts__card post">
+            <header class="post__header">
+              <img class="post__image" src="#" alt="фото пользователя">
+            </header>
+            <div class="post__content">
+              <h2 class="post__author">
+                Борис
+                <time datetime="2018-09-28T15:50">(20 часов назад)</time>
+              </h2>
+              <p class="post__comentary">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+            </div>
+            <footer class="post__footer">
+              <p class="post__like">Нравится: <output class="post__like-output" name="result">215</output></p>
+            </footer>
+          </article>
+        </li>
+
+        <li class="photo-posts__item">
+          <article class="photo-posts__card post">
+            <header class="post__header">
+              <img class="post__image" src="#" alt="фото пользователя">
+            </header>
+            <div class="post__content">
+              <h2 class="post__author">
+                Сергей
+                <time datetime="2018-09-28T10:50">(25 часов назад)</time>
+              </h2>
+              <p class="post__comentary">
+                Самая кубанская в мире!
+              </p>
+            </div>
+            <footer class="post__footer">
+              <p class="post__like">Нравится: <output class="post__like-output" name="result">4</output></p>
+            </footer>
+          </article>
+        </li>
+
+        <li class="photo-posts__item">
+          <article class="photo-posts__card post">
+            <header class="post__header">
+              <img class="post__image" src="#" alt="фото пользователя">
+            </header>
+            <div class="post__content">
+              <h2 class="post__author">
+                Максим
+                <time datetime="2018-09-27T18:50">(40 часов назад)</time>
+              </h2>
+              <p class="post__comentary">
+                Где снег-то?
+              </p>
+            </div>
+            <footer class="post__footer">
+              <p class="post__like">Нравится: <output class="post__like-output" name="result">150</output></p>
+            </footer>
+          </article>
+        </li>
+
+        <li class="photo-posts__item">
+          <article class="photo-posts__card post">
+            <header class="post__header">
+              <img class="post__image" src="#" alt="фото пользователя">
+            </header>
+            <div class="post__content">
+              <h2 class="post__author">
+                Надежда
+                <time datetime="2018-09-27T13:50">(45 чаосв назад)</time>
+              </h2>
+              <p class="post__comentary">
+                Всем GM и взаимные лайки!
+              </p>
+            </div>
+            <footer class="post__footer">
+              <p class="post__like">Нравится: <output class="post__like-output" name="result">2560</output></p>
+            </footer>
+          </article>
+        </li>
+      </ul>
+
+      <section class="your-photo">
+        <header class="your-photo__header">
+          <h2 class="your-photo__head">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        </header>
+        <div class="your-photo__new-photo">
+          <img class="your-photo__image" src="#" alt="Ваше фото">
+          <ul class="your-photo__tools-list tools">
+            <li class="tools__item">
+              <button class="tools__button" type="button" name="button">
+                <img class="tools__icon" src="#" alt="Обрезать">
+              </button>
+            </li>
+            <li class="tools__item">
+              <button class="tools__button" type="button" name="button">
+                <img class="tools__icon" src="#" alt="Добавить розового">
+              </button>
+            </li>
+            <li class="tools__item">
+              <button class="tools__button" type="button" name="button">
+                <img class="tools__icon" src="#" alt="Контраст">
+              </button>
+            </li>
+          </ul>
+
+          <div class="range-controls">
+            <div class="range-controls__scale"></div>
+            <div class="range-controls__toggle"></div>
+          </div>
+        </div>
+
+        <footer class="your-photo__footer">
+          <button class="button button--upload" type="button" name="button">Запостить</button>
+          <button class="button button--cancel" type="button" name="button">Отмена</button>
+        </footer>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo logo--glasses" href="index.html">
+        <img class="logo__image--glassees" src="#" width="147" height="40" alt="Логотоип Пинк">
+      </a>
+
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в ютубе</a>
+        </li>
+      </ul>
+
+      <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
