@@ -1,0 +1,71 @@
+.tariff {
+  text-transform: uppercase;
+}
+
+.tariff__header {
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #283645;
+}
+
+.tariff__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.tariff__value {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.tariff__selected-possibility--no {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    left: -5px;
+
+    width: 37px;
+    height: 3px;
+
+    background-color: #f25b26;
+
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.tariff__selected-possibility--yes {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 31px;
+    height: 21px;
+
+    border-left: 3px solid #3dc644;
+    border-bottom: 3px solid #3dc644;
+
+    transform: rotate(-45deg);
+  }
+}

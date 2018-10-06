@@ -1,0 +1,54 @@
+.main-nav {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #283645;
+}
+
+.main-nav__togle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 24px;
+  height: 23px;
+  border: 0;
+
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: -4px;
+
+    width: 33px;
+    height: 5px;
+
+    background-color: #ffffff;
+
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: rgba(210, 40, 86, 1);
+  }
+
+  &:focus::before,
+  &:focus::after {
+    background-color: @red-transparent;
+  }
+}

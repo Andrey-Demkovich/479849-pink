@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo">
-        <img class="logo__image" src="#" alt="Логотоип Пинк" width="75" height="22">
+      <a class="page-header__logo logo wrapper">
+        <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотоип Пинк" width="75" height="22">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__togle main-nav__togle--close" type="button" name="togle-close-open">Закрыть или открыть меню</button>
+        <button class="main-nav__togle main-nav__togle--close" type="button" name="togle-close-open">
+          <span class="visually-hidden">Закрыть или открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link">Главная</a>
@@ -30,28 +33,28 @@
 
       <div class="page-header__header page-title">
         <h1 class="visually-hidden">Пинк - приложение которое делает нашу жизнь розовой!</h1>
-        <img class="page-title__image" src="#" width="320" height="462" alt="В сером городе мы сделали яркое, розовое фото города на смартфон">
+        <img class="page-title__image" src="img/iphone-hand-mobile@1x.png" width="320" height="462" alt="В сером городе мы сделали яркое, розовое фото города на смартфон">
       </div>
     </header>
 
     <main class="page-main">
-      <section class="download">
+      <section class="download wrapper">
         <h2 class="visually-hidden">Хотите скачать приложение?</h2>
-        <a class="button button--download" href="https://www.apple.com/itunes/">Скачать приложение</a>
+        <a class="download__button button button--download" href="https://www.apple.com/itunes/">Скачать приложение</a>
         <ul class="download__list">
           <li class="download__item">
             <a class="download__link" href="https://www.apple.com/itunes/">
-              <img class="download__img-apple" src="#" width="47" height="56" alt="Логотип Эпл">
+              <img class="download__img-apple" src="img/logo-apple.svg" width="47" height="56" alt="Логотип Эпл">
             </a>
           </li>
           <li class="download__item">
             <a class="download__link" href="https://play.google.com/store/apps">
-              <img class="download__img-android" src="#" width="43" height="47" alt="Логотип операционной системы Андроид">
+              <img class="download__img-android" src="img/logo-android.svg" width="43" height="47" alt="Логотип операционной системы Андроид">
             </a>
           </li>
           <li class="download__item">
             <a class="download__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
-              <img class="download__img-windows" src="#" width="44" height="41" alt="Логотип операционной системы Виндовс">
+              <img class="download__img-windows" src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип операционной системы Виндовс">
             </a>
           </li>
         </ul>
@@ -59,35 +62,37 @@
       </section>
 
       <section class="advantages">
-        <header class="advantages__header">
-          <h2 class="advantages__slogan">
-            <span class="advantages__slogan-interrogative">Устали от серости мегаполиса?</span>
-            <span class="advantages__slogan-positive">Нам есть, что вам  предложить!</span>
+        <header class="wrapper advantages__header">
+          <h2 class="advantages__slogan title">
+            <span class="advantages__slogan-item">Устали от серости мегаполиса?</span>
+            <span class="advantages__slogan-item">Нам есть, что вам  предложить!</span>
           </h2>
         </header>
 
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <img class="advantages__image" src="#" width="157" height="320"
-          alt="Веселое розовое фото на смартфоне со смайлом и подписью 'Всем привет!'">
+        <div class="wrapper advantages__fille">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
+            alt="Веселое розовое фото на смартфоне со смайлом и подписью 'Всем привет!'">
+        </div>
       </section>
 
-      <section class="reviews">
+      <section class="wrapper reviews">
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__slider slider">
-          <ul class="slider__list ">
+          <ul class="slider__list">
             <li class="slider__item">
               <blockquote class="slider__blockquote">
                 <h3 class="slider__heading">
@@ -95,7 +100,7 @@
                 </h3>
                 <p class="slider__text">
                   «Это приложение перевернуло мой мир и позволило по-новому взгллянуть на привычные серые вещи!
-                    А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                    А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
               </blockquote>
             </li>
@@ -126,7 +131,7 @@
           </ul>
 
           <div class="slider__controls controls">
-            <button class="controls__arrow controls__arrow--prev" type="button" name="slide-prev">
+            <button class="controls__arrow controls__arrow--prev visually-hidden" type="button" name="slide-prev">
               <span class="visually-hidden">Назад</span>
             </button>
             <button class="controls__item controls__item--1" type="button" name="slider-control-1">
@@ -138,7 +143,7 @@
             <button class="controls__item controls__item--3" type="button" name="slider-control-3">
               <span class="visually-hidden">Слайд 3</span>
             </button>
-            <button class="controls__arrow controls__arrow--next" type="button" name="slide-next">
+            <button class="controls__arrow controls__arrow--next visually-hidden" type="button" name="slide-next">
               <span class="visually-hidden">Вперед</span>
             </button>
           </div>
@@ -150,70 +155,88 @@
         <div class="tariff-selection__slider slider">
           <ul class="slider__list ">
             <li class="slider__item">
-              <article class="card tariff">
-                <header class="tariff__header">
-                  <h3 class="tariff__name">Стандарт</h3>
-                  <p class="tariff__value">3,99 USD</p>
-                </header>
-                <table class="tariff__table-possibility">
-                  <tr class="tariff__possibility">
-                    <td class="tariff__name-possibility">Розовый фильтр</td>
-                    <td class="tariff__selected-possibility">Да</td>
-                  </tr>
-                  <tr class="tariff__possibility">
-                    <td class="tariff__name-possibility">Смайлики</td>
-                    <td class="tariff__selected-possibility">Да</td>
-                  </tr>
-                  <tr class="tariff__possibility">
-                    <td class="tariff__name-possibility">Комментарии</td>
-                    <td class="tariff__selected-possibility">Нет</td>
-                  </tr>
-                </table>
-              </article>
-            </li>
-
-            <li class="slider__item">
-              <article class="card tariff">
-                <header class="tariff__header new">
+              <article class="card-table tariff">
+                <header class="tariff__header wrapper new">
                   <h3 class="tariff__name">Легкий</h3>
-                  <strong class="visually-hidden">Новинка</strong>
                   <p class="tariff__value">1,99 USD</p>
                 </header>
                 <table class="tariff__table-possibility">
                   <tr class="tariff__possibility">
                     <td class="tariff__name-possibility">Розовый фильтр</td>
-                    <td class="tariff__selected-possibility">Да</td>
+                    <td class="tariff__selected-possibility tariff__selected-possibility--yes">
+                      <span class="visually-hidden">Да</span>
+                    </td>
                   </tr>
                   <tr class="tariff__possibility">
                     <td class="tariff__name-possibility">Смайлики</td>
-                    <td class="tariff__selected-possibility">Нет</td>
+                    <td class="tariff__selected-possibility tariff__selected-possibility--no">
+                      <span class="visually-hidden">Нет</span>
+                    </td>
                   </tr>
                   <tr class="tariff__possibility">
                     <td class="tariff__name-possibility">Комментарии</td>
-                    <td class="tariff__selected-possibility">Нет</td>
+                    <td class="tariff__selected-possibility tariff__selected-possibility--no">
+                      <span class="visually-hidden">Нет</span>
+                    </td>
                   </tr>
                 </table>
               </article>
             </li>
 
             <li class="slider__item">
-              <article class="card tariff">
-                <header class="tariff__header">
+              <article class="card-table tariff">
+                <header class="tariff__header wrapper  new">
+                  <h3 class="tariff__name">Стандарт</h3>
+                  <strong class="visually-hidden">Новинка</strong>
+                  <p class="tariff__value">3,99 USD</p>
+                </header>
+                <table class="tariff__table-possibility">
+                  <tr class="tariff__possibility">
+                    <td class="tariff__name-possibility">Розовый фильтр</td>
+                    <td class="tariff__selected-possibility tariff__selected-possibility--yes">
+                      <span class="visually-hidden">Да</span>
+                    </td>
+                  </tr>
+                  <tr class="tariff__possibility">
+                    <td class="tariff__name-possibility">Смайлики</td>
+                    <td class="tariff__selected-possibility tariff__selected-possibility--yes">
+                      <span class="visually-hidden">Да</span>
+                    </td>
+                  </tr>
+                  <tr class="tariff__possibility">
+                    <td class="tariff__name-possibility">Комментарии</td>
+                    <td class="tariff__selected-possibility tariff__selected-possibility--no">
+                      <span class="visually-hidden">Нет</span>
+                    </td>
+                  </tr>
+                </table>
+              </article>
+            </li>
+
+            <li class="slider__item">
+              <article class="card-table tariff">
+                <header class="tariff__header wrapper">
                   <h3 class="tariff__name">Хард</h3>
                   <p class="tariff__value">4,99 USD</p>
                 </header>
                 <table class="tariff__table-possibility">
                   <tr class="tariff__possibility">
                     <td class="tariff__name-possibility">Розовый фильтр</td>
-                    <td class="tariff__selected-possibility">Да</td>
+                    <td class="tariff__selected-possibility tariff__selected-possibility--yes">
+                      <span class="visually-hidden">Да</span>
+                    </td>
                   </tr>
                   <tr class="tariff__possibility">
                     <td class="tariff__name-possibility">Смайлики</td>
-                    <td class="tariff__selected-possibility">Да</td>
+                    <td class="tariff__selected-possibility tariff__selected-possibility--yes">
+                      <span class="visually-hidden">Да</span>
+                    </td>
                   </tr>
                   <tr class="tariff__possibility">
                     <td class="tariff__name-possibility">Комментарии</td>
-                    <td class="tariff__selected-possibility">Да</td>
+                    <td class="tariff__selected-possibility tariff__selected-possibility--yes">
+                      <span class="visually-hidden">Да</span>
+                    </td>
                   </tr>
                 </table>
               </article>
@@ -221,7 +244,7 @@
           </ul>
 
           <div class="slider__controls controls controls--bg-gray">
-            <button class="controls__arrow controls__arrow--prev" type="button" name="slide-prev">
+            <button class="controls__arrow controls__arrow--prev visually-hidden" type="button" name="slide-prev">
               <span class="visually-hidden">Назад</span>
             </button>
             <button class="controls__item controls__item--1" type="button" name="slider-control-1">
@@ -233,7 +256,7 @@
             <button class="controls__item controls__item--3" type="button" name="slider-control-3">
               <span class="visually-hidden">Слайд 3</span>
             </button>
-            <button class="controls__arrow controls__arrow--next" type="button" name="slide-next">
+            <button class="controls__arrow controls__arrow--next visually-hidden" type="button" name="slide-next">
               <span class="visually-hidden">Вперед</span>
             </button>
           </div>
@@ -241,30 +264,32 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__heading">
-          Остались вопросы? Свяжитесь с нами!
-        </h2>
-        <dl class="contacts__list">
-          <dt class="contacts__name">Звоните:</dt>
-          <dd class="contacts__description">
-            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </dd>
+        <div class="wrapper">
+          <h2 class="contacts__heading title">
+            Остались вопросы? Свяжитесь с нами!
+          </h2>
+          <dl class="contacts__list">
+            <dt class="contacts__name">Звоните:</dt>
+            <dd class="contacts__description">
+              <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </dd>
 
-          <dt class="contacts__name">Пишите:</dt>
-          <dd class="contacts__description">
-            <a class="contacts__link-email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </dd>
+            <dt class="contacts__name">Пишите:</dt>
+            <dd class="contacts__description">
+              <a class="contacts__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </dd>
 
-          <dt class="contacts__name">Приезжайте в гости:</dt>
-          <dd class="contacts__description">ул. Большая Конюшенная, 19/8 </dd>
-        </dl>
+            <dt class="contacts__name">Приезжайте в гости:</dt>
+            <dd class="contacts__description">ул. Большая Конюшенная, 19/8 </dd>
+          </dl>
+        </div>
 
-          <div class="contacts__map">
-            <h2 class="visually-hidden">Как к нам добраться?</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7453776653683!2d30.32051935610706!3d59.936367139013086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5e66d51c5%3A0x6f00589ac258db97!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1538218492565"
-              width="320" height="645" style="border:0" allowfullscreen></iframe>
-            <img class="contacts__map-img visually-hidden" src="#" width="320" height="645" alt="Карта проезда к htmlacademy">
-          </div>
+        <div class="contacts__map">
+          <h2 class="visually-hidden">Как к нам добраться?</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7453776653683!2d30.32051935610706!3d59.936367139013086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5e66d51c5%3A0x6f00589ac258db97!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1538218492565"
+            width="320" height="645" style="border:0" allowfullscreen></iframe>
+          <img class="contacts__map-img visually-hidden" src="#" width="320" height="645" alt="Карта проезда к htmlacademy">
+        </div>
       </section>
     </main>
   </body>
