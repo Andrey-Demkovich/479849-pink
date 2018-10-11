@@ -2,37 +2,44 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial skale=1">
     <title>HTML Academy: Пинк - конкурс</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo wrapper" href="index.html">
-        <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотоип Пинк" width="75" height="22">
-      </a>
+      <div class="page-header__wrap-logo-nav">
+        <div class="page-header__wrap-logo-nav-layout">
+          <a class="page-header__logo logo wrapper" href="index.html">
+            <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотоип Пинк" width="75" height="22">
+          </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__togle main-nav__togle--close" type="button" name="togle-close-open">
-          <span class="visually-hidden">Закрыть или открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__item--active">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" lang="en">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+          <nav class="main-nav">
+            <button class="main-nav__togle main-nav__togle--close" type="button" name="togle-close-open">
+              <span class="visually-hidden">Закрыть или открыть меню</span>
+            </button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__item--active">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" lang="en">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-      <div class="page-header__header page-title wrapper">
-        <h1 class="page-title__heading title title--color">Фотографии пользователей</h1>
+      <div class="page-header__wrap page-header__wrap--photo">
+        <div class="page-header__header page-title wrapper">
+          <h1 class="page-title__heading title title--inner-page title--color">Фотографии пользователей</h1>
+        </div>
       </div>
     </header>
 

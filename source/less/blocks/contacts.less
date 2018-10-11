@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.contacts__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.contacts__item-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .contacts__name {
   font-size: 18px;
   line-height: 22px;
@@ -17,6 +29,19 @@
   color: @red-color;
 }
 
-.contacts__link {
-  color: inherit;
+@media (min-width: 660px) {
+  .contacts__heading {
+    width: 580px;
+    margin: 0 auto;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    flex-grow: 1;
+  }
 }

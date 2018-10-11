@@ -1,0 +1,67 @@
+.study {
+  display: none;
+}
+
+.study__clock {
+  position: relative;
+
+  width: 298px;
+  height: 345px;
+
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+}
+
+.study__hours {
+  position: absolute;
+  top: 70px;
+  left: 22px;
+
+  display: block;
+  width: 253px;
+  height: 253px;
+  border: 20px solid @red-color;
+
+  font-size: 120px;
+  line-height: 187px;
+  color: @red-color;
+  text-align: center;
+
+  border-radius: 50%;
+}
+
+.study__content {
+  width: 310px;
+
+  text-align: left;
+}
+
+.study__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bolder;
+}
+
+@media (min-width: 660px) {
+  .study {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .study {
+    padding-left: 110px;
+    padding-right: 110px;
+
+    background-color: @gray;
+  }
+
+  .study__content {
+    width: 570px;
+  }
+
+  .study__title {
+    line-height: 30px;
+  }
+}

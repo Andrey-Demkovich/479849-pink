@@ -8,6 +8,11 @@
 }
 
 .download__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -18,4 +23,10 @@
 
   line-height: 24px;
   color: #ffffff;
+}
+
+@media (min-width: 660px) {
+  .download {
+    background-color: transparent;
+  }
 }

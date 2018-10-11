@@ -14,8 +14,43 @@
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
+  color: #000000;
+}
+
+.slider__cite-author-about {
+  display: none;
 }
 
 .slider__controls {
   text-align: center;
+}
+
+@media (min-width: 660px) {
+  .slider__blockquote {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider__heading {
+    order: 1;
+  }
+
+  .slider__cite-author {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  .slider__cite-author-about {
+    display: block;
+
+    font-size: 14px;
+    line-height: 30px;
+    color: @asphalt;
+  }
+
+  .slider__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
