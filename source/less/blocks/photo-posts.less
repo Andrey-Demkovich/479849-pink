@@ -1,6 +1,51 @@
+.photo-posts {
+  margin-top: 47px;
+}
+
 .photo-posts__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.photo-posts__item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 660px) {
+  .photo-posts {
+    margin-top: 42px;
+  }
+
+  .photo-posts__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-posts__item {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .photo-posts__item--panorama {
+    margin-left: 0;
+    margin-bottom: 49px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-posts {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 56px;
+  }
+
+  .photo-posts__list {
+    margin-left: -20px;
+  }
+
+  .photo-posts__item {
+    margin-bottom: 52px;
+  }
 }

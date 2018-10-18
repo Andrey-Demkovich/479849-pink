@@ -1,0 +1,64 @@
+.range-controls {
+  position: relative;
+
+  padding-bottom: 35px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: #dddfe0;
+  }
+}
+
+.range-controls__scale {
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+
+  background-color: #000000;
+}
+
+.range-controls__toggle {
+  position: absolute;
+  top: -7px;
+  left: 75%;
+
+  width: 14px;
+  height: 14px;
+  border: 2px solid @red-color;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+}
+
+@media (min-width: 660px) {
+  .range-controls--hidden {
+    display: none;
+  }
+
+  .range-controls__scale {
+    width: 202px;
+  }
+
+  .range-controls {
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .range-controls__scale {
+    width: 287px;
+  }
+}

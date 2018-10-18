@@ -46,14 +46,17 @@
     <main class="page-main">
       <div class="wrapper">
         <header class="promo">
-          <p class="promo__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <p class="promo__description">
+            Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+            <span class="promo__description-hidden">Пожалуйста, заполните форму ниже:</span>
+          </p>
         </header>
       </div>
 
       <section class="page-main__form">
         <h2 class="visually-hidden">Форма конкурса</h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__registration registration wrapper">
+          <fieldset class="form__registration form__registration--name registration registration--name wrapper">
             <legend class="visually-hidden">Регистрация в конкурсе</legend>
             <ul class="registration__list">
               <li class="registration__item">
@@ -71,48 +74,48 @@
             </ul>
           </fieldset>
 
-          <div class="form__choose">
-            <fieldset class="form__choose-fildset choose">
-              <legend class="choose__legend">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="choose-list">
-                <li class="choose-item">
-                  <label class="choose__label">
-                    <input class="choose__checkbox" type="checkbox" name="selfi-shark" checked>
+          <div class="form__choose form__choose--progress">
+            <fieldset class="form__choose-fildset choose choose--progress">
+              <legend class="choose__legend choose__legend--progress">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="choose__list choose__list--progress">
+                <li class="choose__item choose__item--progress choose__item--shark">
+                  <label class="choose__label choose__label--progress">
+                    <input class="choose__checkbox visually-hidden" type="checkbox" name="selfi-shark" checked>
                     <span class="choose__checkbox-indicator"></span>
                     Сделал селфи с акулой
                   </label>
                 </li>
-                <li class="choose-item">
-                  <label class="choose__label">
-                    <input class="choose__checkbox" type="checkbox" name="burnt-beach" checked>
+                <li class="choose__item choose__item--progress choose__item--beach">
+                  <label class="choose__label choose__label--progress">
+                    <input class="choose__checkbox visually-hidden" type="checkbox" name="burnt-beach" checked>
                     <span class="choose__checkbox-indicator"></span>
                     Обгорел на пляже
                   </label>
                 </li>
-                <li class="choose-item">
-                  <label class="choose__label">
-                    <input class="choose__checkbox" type="checkbox" name="Chuck_Norris">
+                <li class="choose__item choose__item--progress choose__item--chak">
+                  <label class="choose__label choose__label--progress">
+                    <input class="choose__checkbox visually-hidden" type="checkbox" name="Chuck_Norris">
                     <span class="choose__checkbox-indicator"></span>
                     Видел Чака Норриса
                   </label>
                 </li>
-                <li class="choose-item">
-                  <label class="choose__label">
-                    <input class="choose__checkbox" type="checkbox" name="buy-souvenir">
+                <li class="choose__item choose__item--progress choose__item--souvenir">
+                  <label class="choose__label choose__label--progress">
+                    <input class="choose__checkbox visually-hidden" type="checkbox" name="buy-souvenir">
                     <span class="choose__checkbox-indicator"></span>
                     Накупил сувениров
                   </label>
                 </li>
-                <li class="choose-item">
-                  <label class="choose__label">
-                    <input class="choose__checkbox" type="checkbox" name="keep-tower" checked>
+                <li class="choose__item choose__item--progress choose__item--tower">
+                  <label class="choose__label choose__label--progress">
+                    <input class="choose__checkbox visually-hidden" type="checkbox" name="keep-tower" checked>
                     <span class="choose__checkbox-indicator"></span>
                     Удержал башню
                   </label>
                 </li>
-                <li class="choose-item">
-                  <label class="choose__label">
-                    <input class="choose__checkbox" type="checkbox" name="destroy-hotel">
+                <li class="choose__item choose__item--progress choose__item--hotel">
+                  <label class="choose__label choose__label--progress">
+                    <input class="choose__checkbox visually-hidden" type="checkbox" name="destroy-hotel">
                     <span class="choose__checkbox-indicator"></span>
                     Разгромил отель
                   </label>
@@ -121,42 +124,42 @@
             </fieldset>
           </div>
 
-          <fieldset class="form__registration registration wrapper">
-            <legend class="visually-hidden">Ваши контактные данные</legend>
-            <ul class="registration__list">
-              <li class="registration__item">
-                <label class="registration__label" for="phone-number">Номер телефона</label>
-                <input class="registration__input" id="phone-number" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+          <fieldset class="form__registration form__registration--contacts registration registration--contacts wrapper">
+            <legend class="registration__legend registration__legend--contacts">Контактная информация</legend>
+            <ul class="registration__list registration__list--contacts">
+              <li class="registration__item registration__item--contacts">
+                <label class="registration__label registration__label--contacts" for="phone-number">Номер телефона</label>
+                <input class="registration__input registration__input--contacts" id="phone-number" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
               </li>
-              <li class="registration__item">
-                <label class="registration__label" for="registration-email">Адрес почты</label>
-                <input class="registration__input" id="registration-email" type="email" name="registration-email" placeholder="Введите почту *" required>
+              <li class="registration__item registration__item--contacts registration__item--email">
+                <label class="registration__label registration__label--contacts" for="registration-email">Адрес почты</label>
+                <input class="registration__input registration__input--contacts" id="registration-email" type="email" name="registration-email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
 
-          <div class="form__choose">
+          <div class="form__choose form__choose--application">
             <fieldset class="form__choose-fildset choose">
-              <legend class="choose__legend">С каким приложением путешествовали?</legend>
-              <ul class="choose-list">
-                <li class="choose-item">
+              <legend class="choose__legend choose__legend--application">С каким приложением путешествовали?</legend>
+              <ul class="choose__list">
+                <li class="choose__item choose__item--application">
                   <label class="choose__label">
-                    <input class="choose__checkbox" type="radio" name="operating_system" value="iOS" checked>
-                    <span class="choose__checkbox-indicator"></span>
+                    <input class="choose__checkbox choose__checkbox--applecation visually-hidden" type="radio" name="operating_system" value="iOS" checked>
+                    <span class="choose__radio-indicator"></span>
                     Pink для iOS
                   </label>
                 </li>
-                <li class="choose-item">
+                <li class="choose__item choose__item--application">
                   <label class="choose__label">
-                    <input class="choose__checkbox" type="radio" name="operating_system" value="Android">
-                    <span class="choose__checkbox-indicator"></span>
+                    <input class="choose__checkbox choose__checkbox--applecation visually-hidden" type="radio" name="operating_system" value="Android">
+                    <span class="choose__radio-indicator"></span>
                     Pink на Android
                   </label>
                 </li>
-                <li class="choose-item">
+                <li class="choose__item choose__item--application">
                   <label class="choose__label">
-                    <input class="choose__checkbox" type="radio" name="operating_system" value="Windows">
-                    <span class="choose__checkbox-indicator"></span>
+                    <input class="choose__checkbox choose__checkbox--applecation visually-hidden" type="radio" name="operating_system" value="Windows">
+                    <span class="choose__radio-indicator"></span>
                     Windows Phone
                   </label>
                 </li>
@@ -164,19 +167,23 @@
             </fieldset>
           </div>
 
-          <fieldset class="form__choose-fildset choose">
-            <legend class="choose__legend"><label for="emotions">Опишите свои эмоции</label></legend>
-            <ul class="choose-list">
-              <li class="choose-item">
-                <textarea class="choose__textarea" id="emotions" name="description-emotions" rows="8"
+          <fieldset class="form__choose-fildset form__choose-fildset--emotions choose choose--emotions">
+            <legend class="choose__legend choose__legend choose__legend--emotions">
+              <label for="emotions">Опишите свои эмоции</label>
+            </legend>
+            <ul class="choose__list">
+              <li class="choose__item choose__item--emotions">
+                <textarea class="choose__textarea" id="emotions" name="description-emotions" rows="3"
                   placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </li>
             </ul>
           </fieldset>
 
-          <div class="wrapper">
+          <div class="form__submit-wrap wrapper">
             <button class="form__submit button-form" type="submit">Отправить форму</button>
-            <small class="form__note"><span class="form__star">*</span> — обязательные поля</small>
+            <small class="form__note">
+              <span class="form__star">*</span> — обязательные
+              <span class="form__hidden">для заполнения</span> поля</small>
           </div>
         </form>
       </section>
@@ -209,13 +216,23 @@
       </ul>
 
       <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden" lang="en">HTML Academy</span>
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="">
+            <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
           </a>
       </div>
     </footer>
+
+    <section class="pop-up wrapper">
+      <h2 class="pop-up__heading pop-up__heading--error">Что-то пошло не так!</h2>
+      <p class="pop-up__description pop-up__description--error">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <div class="pop-up__container-button pop-up__container-button--error">
+        <button class="pop-up__button pop-up__button--error button-form" type="button">Ок</button>
+      </div>
+    </section>
 
     <section class="pop-up">
       <div class="wrapper">
@@ -226,18 +243,8 @@
       </div>
       <div class="pop-up__container-button pop-up__container-button--filled">
         <div class="wrapper">
-          <button class="pop-up__button button-form" type="button">Закрыть окно</button>
+          <button class="pop-up__button button-form button-form--close" type="button">Закрыть окно</button>
         </div>
-      </div>
-    </section>
-
-    <section class="pop-up wrapper">
-      <h2 class="pop-up__heading">Что-то пошло не так!</h2>
-      <p class="pop-up__description">
-        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-      </p>
-      <div class="pop-up__container-button">
-        <button class="pop-up__button button-form" type="button">Ок</button>
       </div>
     </section>
   </body>

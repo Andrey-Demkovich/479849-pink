@@ -1,6 +1,41 @@
 .promo__description {
+  margin: 0;
+  padding: 0 10px;
+  padding-top: 45px;
+  padding-bottom: 2px;
+
   font-size: inherit;
   line-height: inherit;
   font-weight: normal;
   text-align: center;
+}
+
+.promo__description-hidden {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .promo__description {
+    padding: 0 70px;
+    padding-top: 93px;
+    padding-bottom: 33px;
+
+    font-size: 18px;
+  }
+
+  .promo__description-hidden {
+    display: inline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo__description {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+
+  .promo__description--photo {
+    padding-left: 280px;
+    padding-right: 280px;
+  }
 }

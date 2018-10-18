@@ -1,5 +1,23 @@
+.form {
+  margin-bottom: 54px;
+}
+
 .form__choose {
   background-color: @gray;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.form__choose-fildset--emotions {
+  margin-top: 20px;
+}
+
+.form__submit-wrap {
+  padding-top: 12px;
+}
+
+.form__submit {
+  margin-bottom: 33px;
 }
 
 .form__note {
@@ -14,4 +32,102 @@
 .form__star {
   font-size: 18px;
   color: @red-color;
+}
+
+.form__hidden {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-bottom: 79px;
+  }
+
+  .form__registration {
+    order: 1;
+  }
+
+  .form__choose {
+    order: 4;
+
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 11px;
+
+    background-color: transparent;
+  }
+
+  .form__registration--contacts {
+    order: 3;
+  }
+
+  .form__choose--application {
+    order: 2;
+
+    margin-bottom: 37px;
+  }
+
+  .form__choose-fildset--emotions {
+    order: 5;
+  }
+
+  .form__submit-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 6;
+
+    padding-top: 67px;
+  }
+
+  .form__submit {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-bottom: 58px;
+  }
+
+  .form__registration--name {
+    width: 470px;
+  }
+
+  .form__choose--application {
+    width: 435px;
+    margin-top: 38px;
+    margin-left: 35px;
+    padding: 0;
+  }
+
+  .form__registration--contacts {
+    width: 100%;
+  }
+
+  .form__choose--progress {
+    width: 100%;
+  }
+
+  .form__choose-fildset--emotions {
+    width: 100%;
+  }
+
+  .form__submit-wrap {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 65px;
+  }
+
+  .form__hidden {
+    display: inline;
+  }
 }
