@@ -11,7 +11,11 @@
       <div class="page-header__wrap-logo-nav">
         <div class="page-header__wrap-logo-nav-layout">
           <a class="page-header__logo logo wrapper">
-            <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотоип Пинк" width="75" height="22">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотоип Пинк" width="75" height="22">
+            </picture>
           </a>
 
           <nav class="main-nav">
@@ -20,7 +24,7 @@
             </button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">Главная</a>
+                <a class="site-list__link site-list__link--active">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="photo.html">Фотографии</a>
@@ -37,7 +41,11 @@
       </div>
 
       <div class="page-header__wrap-header-download">
-        <img class="page-header__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="В сером городе мы сделали яркое, розовое фото города на смартфон">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
+            <img class="page-header__image" src="img/iphone-hand-mobile@1x.png" alt="В сером городе мы сделали яркое, розовое фото города на смартфон">
+          </picture>
 
         <div class="page-header__wrap-aside">
           <div class="page-header__header page-title">
@@ -46,20 +54,20 @@
 
           <section class="page-header__download download wrapper">
             <h2 class="visually-hidden">Хотите скачать приложение?</h2>
-            <a class="download__button button button--download" href="https://www.apple.com/itunes/">Скачать приложение</a>
+            <a class="download__button button button--download" href="https://www.apple.com/itunes/" target="_blank">Скачать приложение</a>
             <ul class="download__list">
               <li class="download__item">
-                <a class="download__link" href="https://www.apple.com/itunes/">
+                <a class="download__link" href="https://www.apple.com/itunes/" target="_blank">
                   <img class="download__img-apple" src="img/logo-apple.svg" width="47" height="56" alt="Логотип Эпл">
                 </a>
               </li>
               <li class="download__item">
-                <a class="download__link" href="https://play.google.com/store/apps">
+                <a class="download__link" href="https://play.google.com/store/apps" target="_blank">
                   <img class="download__img-android" src="img/logo-android.svg" width="43" height="47" alt="Логотип операционной системы Андроид">
                 </a>
               </li>
               <li class="download__item">
-                <a class="download__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
+                <a class="download__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone" target="_blank">
                   <img class="download__img-windows" src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип операционной системы Виндовс">
                 </a>
               </li>
@@ -104,9 +112,12 @@
               <img class="advantages__image" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302"
                 alt="Веселое розовое фото на смартфоне со смайлом и подписью 'Всем привет!'">
             </li>
-            <li class="advantages__item-image">
-              <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
-                alt="Веселое розовое фото на смартфоне со смайлом и подписью 'Всем привет!'">
+            <li class="advantages__item-image advantages__item-image--smile">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png">
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+                <img class="advantages__image advantages__image--smile" src="img/iphone-screen-mobile@1x.png" alt="Веселое розовое фото на смартфоне со смайлом и подписью 'Всем привет!'">
+              </picture>
             </li>
           </ul>
         </div>

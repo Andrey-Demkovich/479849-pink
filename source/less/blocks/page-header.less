@@ -33,6 +33,9 @@
 
 @media (min-width: 660px) {
   .page-header {
+    // position: relative;
+    // z-index: -1;
+
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: -270px 256px;
   }
@@ -42,14 +45,30 @@
   }
 
   .page-header__wrap-header-download {
+    position: relative;
+
     display: flex;
+
     margin-top: 74px;
   }
 
+  .page-header__image {
+    position: absolute;
+    top: -1px;
+    right: 0;
+
+    width: 700px;
+    height: 545px;
+  }
+
   .page-header__wrap-aside {
+    position: relative;
+    z-index: 2;
+
     order: -1;
 
     width: 340px;
+    padding-top: 19px;
   }
 
   .page-header__wrap {
@@ -89,6 +108,18 @@
     margin-top: 100px;
     margin-left: 110px;
     margin-right: 130px;
+  }
+
+  .page-header__image {
+    top: -1px;
+    right: -85px;
+
+    width: 1050px;
+    height: 645px;
+  }
+
+  .page-header__wrap-aside {
+    padding-top: 9px;
   }
 
   .page-header__wrap {

@@ -1,18 +1,24 @@
 .download {
-  padding-top: 45px;
-  padding-bottom: 40px;
+  padding-top: 28px;
+  padding-bottom: 30px;
 
   text-align: center;
 
   background-color: #1d2631;
 }
 
+.download__button {
+  margin-bottom: 36px;
+}
+
 .download__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
-  margin: 0;
+  width: 206px;
+  margin: 0 auto;
+  margin-bottom: 7px;
   padding: 0;
 
   list-style: none;
@@ -27,6 +33,36 @@
 
 @media (min-width: 660px) {
   .download {
+    padding-top: 30px;
+    padding-bottom: 109px;
+
     background-color: transparent;
+  }
+
+  .download__button {
+    margin-bottom: 48px;
+  }
+
+  .download__list {
+    margin-bottom: 24px;
+  }
+
+  .download__description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download {
+    padding-top: 49px;
+    padding-bottom: 122px;
+  }
+
+  .download__button {
+    margin-bottom: 69px;
+  }
+
+  .download__list {
+    margin-bottom: 42px;
   }
 }
