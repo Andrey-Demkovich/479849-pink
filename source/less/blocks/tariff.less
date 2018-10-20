@@ -9,8 +9,11 @@
   position: relative;
   left: -540px;
 
+  margin-bottom: 41px;
+
   text-transform: uppercase;
 
+  background-color: #ffffff;
   border-collapse: collapse;
 }
 
@@ -40,8 +43,37 @@
   background-color: transparent;
 }
 
+.tariff__plane--hit {
+  position: relative;
+}
+
 .tariff__name {
   display: block;
+}
+
+.tariff__hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 74px;
+  height: 73px;
+
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.tariff__hit-text {
+  position: absolute;
+  top: 11px;
+  left: 9px;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+
+  transform: rotate(-45deg);
 }
 
 .tariff__service,
@@ -136,6 +168,18 @@
     font-size: 16px;
   }
 
+  .tariff__hit {
+    width: 61px;
+    height: 61px;
+
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .tariff__hit-text {
+    top: 4px;
+    left: 6px;
+  }
+
   .tariff__value {
     font-size: 18px;
   }
@@ -181,11 +225,27 @@
     width: 940px;
   }
 
+  .tariff__table {
+    margin-bottom: 0;
+  }
+
   .tariff__plane {
     padding-top: 18px;
     padding-bottom: 19px;
 
     font-size: 18px;
+  }
+
+  .tariff__hit {
+    width: 74px;
+    height: 73px;
+
+    background-image: url("../img/bg-hit.svg");
+  }
+
+  .tariff__hit-text {
+    top: 11px;
+    left: 9px;
   }
 
   .tariff__value {

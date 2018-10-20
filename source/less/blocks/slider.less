@@ -26,6 +26,11 @@
   display: none;
 }
 
+.slider__text {
+  margin: 0;
+  margin-top: 12px;
+}
+
 .slider__controls {
   text-align: center;
 }
@@ -38,12 +43,14 @@
 
   .slider__heading {
     order: 1;
+
+    margin-top: 35px;
   }
 
   .slider__cite-author {
     font-size: 20px;
     line-height: 30px;
-    font-weight: normal;
+    font-weight: bold;
   }
 
   .slider__cite-author-about {
@@ -51,11 +58,28 @@
 
     font-size: 14px;
     line-height: 30px;
+    font-weight: normal;
     color: @asphalt;
   }
 
   .slider__text {
+    margin-top: 29px;
+
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider__text {
+    margin-top: 0;
+  }
+
+  .slider__cite-author {
+    font-size: 24px;
+  }
+
+  .slider__cite-author-about {
+    font-size: 18px;
   }
 }

@@ -128,10 +128,10 @@
           </div>
           <div class="study__content">
             <h3 class="study__title">Эффект на 24 часа!</h3>
-            <p class="advantages__description">
+            <p class="study__description">
               Британские ученые провели исследования и доказали, что положительный эффект от ипользования приложения длится целые сутки!
             </p>
-            <a class="advantages__link" href="https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B5_%D1%83%D1%87%D1%91%D0%BD%D1%8B%D0%B5">Узнать больше об исследовании</a>
+            <a class="study__link" href="https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B5_%D1%83%D1%87%D1%91%D0%BD%D1%8B%D0%B5">Узнать больше об исследовании</a>
           </div>
         </article>
       </section>
@@ -186,20 +186,22 @@
             </li>
           </ul>
 
-          <div class="slider__controls controls">
-            <button class="controls__arrow controls__arrow--prev visually-hidden" type="button" name="slide-prev">
+          <div class="reviews__controls slider__controls controls">
+            <button class="controls__arrow controls__arrow--prev" type="button" name="slide-prev">
               <span class="visually-hidden">Назад</span>
             </button>
-            <button class="controls__item controls__item--1" type="button" name="slider-control-1">
-              <span class="visually-hidden">Слайд 1</span>
-            </button>
-            <button class="controls__item controls__item--2" type="button" name="slider-control-2">
-              <span class="visually-hidden">Слайд 2</span>
-            </button>
-            <button class="controls__item controls__item--3" type="button" name="slider-control-3">
-              <span class="visually-hidden">Слайд 3</span>
-            </button>
-            <button class="controls__arrow controls__arrow--next visually-hidden" type="button" name="slide-next">
+            <div class="controls__dotted-block">
+              <button class="controls__item  controls__item--active controls__item--1" type="button" name="slider-control-1">
+                <span class="visually-hidden">Слайд 1</span>
+              </button>
+              <button class="controls__item controls__item--2" type="button" name="slider-control-2">
+                <span class="visually-hidden">Слайд 2</span>
+              </button>
+              <button class="controls__item controls__item--3" type="button" name="slider-control-3">
+                <span class="visually-hidden">Слайд 3</span>
+              </button>
+            </div>
+            <button class="controls__arrow controls__arrow--next" type="button" name="slide-next">
               <span class="visually-hidden">Вперед</span>
             </button>
           </div>
@@ -216,9 +218,9 @@
                 <span class="tariff__name">База</span>
                 <span class="tariff__value">1,99 USD</span>
               </th>
-              <th class="tariff__plane new">
+              <th class="tariff__plane tariff__plane--hit">
                 <span class="tariff__name">Стандарт</span>
-                <strong class="visually-hidden">Новинка</strong>
+                <strong class="tariff__hit"><span class="tariff__hit-text">ХИТ</span></strong>
                 <span class="tariff__value">3,99 USD</span>
               </th>
               <th class="tariff__plane">
@@ -276,19 +278,21 @@
             </tr>
           </table>
 
-          <div class="slider__controls controls controls--bg-gray">
+          <div class="tariff-selection__controls slider__controls controls controls--bg-gray">
             <button class="controls__arrow controls__arrow--prev visually-hidden" type="button" name="slide-prev">
               <span class="visually-hidden">Назад</span>
             </button>
-            <button class="controls__item controls__item--1" type="button" name="slider-control-1">
-              <span class="visually-hidden">Слайд 1</span>
-            </button>
-            <button class="controls__item controls__item--2" type="button" name="slider-control-2">
-              <span class="visually-hidden">Слайд 2</span>
-            </button>
-            <button class="controls__item controls__item--3" type="button" name="slider-control-3">
-              <span class="visually-hidden">Слайд 3</span>
-            </button>
+            <div class="controls__dotted-block controls__dotted-block--table">
+              <button class="controls__item controls__item--tariff controls__item--1" type="button" name="slider-control-1">
+                <span class="visually-hidden">Слайд 1</span>
+              </button>
+              <button class="controls__item controls__item--tariff controls__item--active controls__item--2" type="button" name="slider-control-2">
+                <span class="visually-hidden">Слайд 2</span>
+              </button>
+              <button class="controls__item controls__item--tariff controls__item--3" type="button" name="slider-control-3">
+                <span class="visually-hidden">Слайд 3</span>
+              </button>
+            </div>
             <button class="controls__arrow controls__arrow--next visually-hidden" type="button" name="slide-next">
               <span class="visually-hidden">Вперед</span>
             </button>
@@ -297,22 +301,22 @@
       </section>
 
       <section class="contacts">
-        <div class="wrapper">
+        <div class="contacts__wrapper wrapper">
           <h2 class="contacts__heading title">
             Остались вопросы? Свяжитесь с нами!
           </h2>
           <ul class="contacts__list">
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--tel">
               <p class="contacts__name">Звоните:</p>
               <a class="contacts__description" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
 
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--mail">
               <p class="contacts__name">Пишите:</p>
               <a class="contacts__description" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
 
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--adress">
               <div class="contacts__item-container">
                 <p class="contacts__name">Приезжайте в гости:</p>
                 <p class="contacts__description">ул. Большая Конюшенная, 19/8 </p>
