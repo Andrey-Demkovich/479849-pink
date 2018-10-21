@@ -131,7 +131,7 @@
             <p class="study__description">
               Британские ученые провели исследования и доказали, что положительный эффект от ипользования приложения длится целые сутки!
             </p>
-            <a class="study__link" href="https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B5_%D1%83%D1%87%D1%91%D0%BD%D1%8B%D0%B5">Узнать больше об исследовании</a>
+            <a class="study__link" href="https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B5_%D1%83%D1%87%D1%91%D0%BD%D1%8B%D0%B5" target="_blank">Узнать больше об исследовании</a>
           </div>
         </article>
       </section>
@@ -308,12 +308,12 @@
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--tel">
               <p class="contacts__name">Звоните:</p>
-              <a class="contacts__description" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <a class="contacts__description contacts__description--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
 
             <li class="contacts__item contacts__item--mail">
               <p class="contacts__name">Пишите:</p>
-              <a class="contacts__description" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts__description contacts__description--link contacts__description--mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
 
             <li class="contacts__item contacts__item--adress">
@@ -327,14 +327,18 @@
 
         <div class="contacts__map">
           <h2 class="visually-hidden">Как к нам добраться?</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7453776653683!2d30.32051935610706!3d59.936367139013086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5e66d51c5%3A0x6f00589ac258db97!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1538218492565"
-            width="320" height="645" style="border:0" allowfullscreen></iframe>
-          <img class="contacts__map-img visually-hidden" src="#" width="320" height="645" alt="Карта проезда к htmlacademy">
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7453776653683!2d30.32051935610706!3d59.936367139013086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5e66d51c5%3A0x6f00589ac258db97!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1538218492565"
+            width="320" height="645" style="border:0" allowfullscreen></iframe> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
+            <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" alt="Карта проезда к htmlacademy">
+          </picture>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer wrapper">
+    <footer class="page-footer page-footer--hidden wrapper">
       <a class="page-footer__logo logo--glasses">
         <img class="logo__image--glassees" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотоип Пинк">
       </a>
@@ -364,7 +368,7 @@
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden" lang="en">HTML Academy</span>
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
           </a>
       </div>
     </footer>
