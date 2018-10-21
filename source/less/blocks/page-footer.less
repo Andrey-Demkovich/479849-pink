@@ -5,6 +5,10 @@
   padding-bottom: 30px;
 }
 
+.page-footer--hidden {
+  display: none;
+}
+
 .page-footer__logo {
   margin-bottom: 25px;
 }
@@ -13,9 +17,18 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
 
+    padding-top: 35px;
     padding-bottom: 36px;
+  }
+
+  .page-footer--hidden {
+    display: flex;
+  }
+
+  .page-footer__copyright {
+    margin-top: 15px;
   }
 
   .page-footer__logo {
@@ -25,6 +38,7 @@
 
 @media (min-width: 1200px) {
   .page-footer {
+    padding-top: 69px;
     padding-bottom: 77px;
     padding-left: 130px;
     padding-right: 130px;
