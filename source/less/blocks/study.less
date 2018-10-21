@@ -1,0 +1,120 @@
+.study {
+  display: none;
+}
+
+.study__clock {
+  position: relative;
+
+  width: 298px;
+  height: 345px;
+
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-size: 238px 276px;
+}
+
+.study__hours {
+  position: absolute;
+  top: 56px;
+  left: 19px;
+
+  display: block;
+  width: 202px;
+  height: 202px;
+  border: 14px solid @red-color;
+
+  font-size: 100px;
+  line-height: 169px;
+  color: @red-color;
+  text-align: center;
+
+  border-radius: 50%;
+}
+
+.study__content {
+  width: 310px;
+  margin-top: 38px;
+  padding-right: 20px;
+
+  text-align: left;
+}
+
+.study__title {
+  margin: 0;
+  padding-right: 20px;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.study__description {
+  margin: 0;
+  margin-top: 11px;
+  padding: 0;
+  padding-right: 10px;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.study__link {
+  display: block;
+  margin-top: 5px;
+
+  color: @red-color;
+  text-decoration: underline;
+}
+
+@media (min-width: 660px) {
+  .study {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .study {
+    padding-bottom: 68px;
+    padding-left: 130px;
+    padding-right: 130px;
+
+    background-color: @gray;
+  }
+
+  .study__clock {
+    background-size: auto auto;
+  }
+
+  .study__hours {
+    top: 70px;
+    left: 23px;
+
+    width: 253px;
+    height: 253px;
+    border: 18px solid @red-color;
+
+    font-size: 120px;
+    line-height: 214px;
+  }
+
+  .study__content {
+    width: 570px;
+    margin-top: 97px;
+  }
+
+  .study__title {
+    line-height: 30px;
+  }
+
+  .study__description {
+    margin-top: 23px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .study__link {
+    margin-top: 32px;
+  }
+}

@@ -1,36 +1,118 @@
 .tariff {
+  width: 320px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+.tariff__table {
+  position: relative;
+  left: -540px;
+
+  margin-bottom: 41px;
+
   text-transform: uppercase;
+
+  background-color: #ffffff;
+  border-collapse: collapse;
 }
 
 .tariff__header {
   color: #ffffff;
   text-align: center;
+}
+
+.tariff__plane {
+  width: 280px;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
 
   background-color: #283645;
 }
 
+.tariff__plane--hidden {
+  font-size: 0;
+  border: none;
+
+  background-color: transparent;
+}
+
+.tariff__plane--hit {
+  position: relative;
+}
+
 .tariff__name {
-  font-size: 18px;
+  display: block;
+}
+
+.tariff__hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 74px;
+  height: 73px;
+
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.tariff__hit-text {
+  position: absolute;
+  top: 11px;
+  left: 9px;
+
+  font-size: 14px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: normal;
+
+  transform: rotate(-45deg);
+}
+
+.tariff__service,
+.tariff__data {
+  position: relative;
+  width: 280px;
+
+  border: 2px solid #e5e5e5;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: @asphalt;
+}
+
+.tariff__service-name {
+  display: block;
+  width: 276px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .tariff__value {
+  display: block;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: lighter;
 }
 
-.tariff__selected-possibility--no {
-  position: relative;
-
+.tariff__selected--no {
   &::before,
   &::after {
     content: "";
 
     position: absolute;
-    top: 14px;
-    left: -5px;
+    top: 26px;
+    right: 13px;
 
     width: 37px;
     height: 3px;
@@ -49,23 +131,154 @@
   }
 }
 
-.tariff__selected-possibility--yes {
-  position: relative;
-
+.tariff__selected--yes {
   &::before,
   &::after {
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 16px;
+    right: 17px;
 
-    width: 31px;
-    height: 21px;
+    width: 32px;
+    height: 16px;
 
     border-left: 3px solid #3dc644;
     border-bottom: 3px solid #3dc644;
 
     transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: 660px) {
+  .tariff {
+    width: 620px;
+
+    overflow: visible;
+  }
+
+  .tariff__table {
+    left: auto;
+  }
+
+  .tariff__plane {
+    padding-top: 13px;
+    padding-bottom: 5px;
+
+    font-size: 16px;
+  }
+
+  .tariff__hit {
+    width: 61px;
+    height: 61px;
+
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .tariff__hit-text {
+    top: 4px;
+    left: 6px;
+  }
+
+  .tariff__value {
+    font-size: 18px;
+  }
+
+  .tariff__service-name {
+    width: 151px;
+    padding-top: 4px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 5px;
+
+    text-transform: none;
+  }
+
+  .tariff__service-name--hidden {
+    display: none;
+  }
+
+  .tariff__selected {
+    display: block;
+    width: 151px;
+  }
+
+  .tariff__selected--no {
+    &::before,
+    &::after {
+      top: 20px;
+      right: 57px;
+    }
+  }
+
+  .tariff__selected--yes {
+    &::before,
+    &::after {
+      top: 9px;
+      right: 59px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .tariff {
+    width: 940px;
+  }
+
+  .tariff__table {
+    margin-bottom: 0;
+  }
+
+  .tariff__plane {
+    padding-top: 18px;
+    padding-bottom: 19px;
+
+    font-size: 18px;
+  }
+
+  .tariff__hit {
+    width: 74px;
+    height: 73px;
+
+    background-image: url("../img/bg-hit.svg");
+  }
+
+  .tariff__hit-text {
+    top: 11px;
+    left: 9px;
+  }
+
+  .tariff__value {
+    font-size: 24px;
+  }
+
+  .tariff__service-name {
+    width: 232px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    padding-right: 5px;
+
+    font-size: 18px;
+  }
+
+  .tariff__selected {
+    width: 232px;
+  }
+
+  .tariff__selected--no {
+    &::before,
+    &::after {
+      top: 26px;
+      right: 102px;
+    }
+  }
+
+  .tariff__selected--yes {
+    &::before,
+    &::after {
+      top: 17px;
+      right: 102px;
+    }
   }
 }

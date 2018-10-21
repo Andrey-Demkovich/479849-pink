@@ -1,15 +1,39 @@
 .social {
+  display: flex;
+  justify-content: space-between;
+
+  width: 177px;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 
   list-style: none;
 }
 
+.social__item {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
 .social__link {
-  display: block;
-  width: 45px;
-  height: 45px;
+  display: flex;
+  justify-content: center;
+
+  width: 51px;
+  height: 51px;
   border: 3px solid rgba(40, 54, 69, 0.1);
 
   border-radius: 50%;
+}
+
+@media (min-width: 660px) {
+  .social {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social {
+    margin-bottom: -9px;
+  }
 }

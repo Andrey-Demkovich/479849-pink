@@ -1,11 +1,19 @@
 .site-list {
+  margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #000000;
+
   color: inherit;
+
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.15);
 
   &:hover,
   &:focus {
@@ -14,5 +22,29 @@
 
   &:active {
     color: @red-transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 620px;
+  }
+
+  .site-list__link {
+    padding: 8px 0;
+    border-bottom: none;
+
+    box-shadow: none;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .site-list__link--active {
+    border-bottom: 2px solid #ffffff;
   }
 }

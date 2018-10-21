@@ -1,0 +1,62 @@
+.tariff-selection {
+  position: relative;
+
+  padding-top: 65px;
+
+  background-color: @gray;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -28px;
+    right: 0;
+
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid @gray;
+    border-right: 160px solid @gray;
+    border-left: 160px solid transparent;
+  }
+}
+
+.tariff-selection__controls {
+  margin-bottom: 47px;
+}
+
+@media (min-width: 660px) {
+  .tariff-selection {
+    padding-top: 38px;
+    padding-bottom: 26px;
+
+    &::before {
+      top: -50px;
+
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid @gray;
+      border-right: 330px solid @gray;
+      border-left: 330px solid transparent;
+    }
+  }
+
+  .tariff-selection__controls {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tariff-selection {
+    padding-top: 66px;
+    padding-bottom: 94px;
+
+    &::before {
+      top: -82px;
+
+      border-top: 41px solid transparent;
+      border-bottom: 41px solid @gray;
+      border-right: 600px solid @gray;
+      border-left: 600px solid transparent;
+    }
+  }
+}

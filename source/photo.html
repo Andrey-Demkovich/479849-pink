@@ -2,201 +2,201 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial skale=1">
     <title>HTML Academy: Пинк - конкурс</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo wrapper" href="index.html">
-        <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотоип Пинк" width="75" height="22">
-      </a>
+      <div class="page-header__wrap-logo-nav">
+        <div class="page-header__wrap-logo-nav-layout">
+          <a class="page-header__logo logo wrapper" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="Логотоип Пинк" width="75" height="22">
+            </picture>
+          </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__togle main-nav__togle--close" type="button" name="togle-close-open">
-          <span class="visually-hidden">Закрыть или открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__item--active">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" lang="en">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+          <nav class="main-nav">
+            <button class="main-nav__togle main-nav__togle--close" type="button" name="togle-close-open">
+              <span class="visually-hidden">Закрыть или открыть меню</span>
+            </button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link site-list__link--active ">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" lang="en">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-      <div class="page-header__header page-title wrapper">
-        <h1 class="page-title__heading title title--color">Фотографии пользователей</h1>
+      <div class="page-header__wrap page-header__wrap--photo">
+        <div class="page-header__header page-title wrapper">
+          <h1 class="page-title__heading title title--inner-page title--color">Фотографии пользователей</h1>
+        </div>
       </div>
     </header>
 
     <main class="page-main">
       <div class="wrapper">
         <header class="promo">
-          <p class="promo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="promo__description promo__description--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </header>
       </div>
 
       <section class="photo-posts">
+        <h2 class="visually-hidden"> Последние фото наших пользователей с коментариями</h2>
         <ul class="photo-posts__list">
-          <li class="photo-posts__item">
-            <article class="photo-posts__card post">
-              <header class="post__header post__header--panoram-nowrap wrapper">
-                <img class="post__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="фото пользователя">
+          <li class="photo-posts__item photo-posts__item--panorama">
+            <article class="photo-posts__card post post--panorama">
+              <header class="post__header post__header--panorama">
+                <img class="post__image post__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="фото пользователя">
                 <strong class="post__panorama">Панорама дня</strong>
               </header>
-              <section class="photo-posts__text-post wrapper">
-                <div class="post__content">
-                  <h2 class="post__author">
-                    Анна
-                    <time class="post__time" datetime="2018-09-29T11:50">(5 минут назад)</time>
-                  </h2>
-                  <p class="post__comentary">
-                    Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы!
+              <div class="post__content post__content--panorama">
+                <h2 class="post__author">
+                  Анна
+                  <time class="post__time" datetime="2018-09-29T11:50">(5 минут назад)</time>
+                </h2>
+                <p class="post__comentary post__comentary--panorama">
+                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перескопе, задавайте свои вопросы!
+                </p>
+                <footer class="post__footer post__footer--panorama">
+                  <p class="post__like post__like--panorama">
+                    Нравится: <output class="post__like-output" name="result">215</output>
                   </p>
-                </div>
-              </section>
-              <footer class="post__footer wrapper">
-                <p class="post__like">Нравится: <output class="post__like-output" name="result">215</output></p>
-              </footer>
+                </footer>
+              </div>
             </article>
           </li>
 
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
-              <header class="post__header wrapper">
+              <header class="post__header">
                 <img class="post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
               </header>
-              <section class="photo-posts__text-post wrapper">
-                <div class="post__content">
-                  <h2 class="post__author">
-                    Левон
-                    <time class="post__time" datetime="2018-09-29T06:50">(5 часов назад)</time>
-                  </h2>
-                  <p class="post__comentary">
-                    Вчера он на луну летал, сегодня в руки к нам попал.
-                  </p>
-                </div>
-              </section>
-              <footer class="post__footer wrapper">
-                <p class="post__like">Нравится: <output class="post__like-output" name="result">356</output></p>
-              </footer>
+              <div class="post__content">
+                <h2 class="post__author">
+                  Левон
+                  <time class="post__time" datetime="2018-09-29T06:50">(5 часов назад)</time>
+                </h2>
+                <p class="post__comentary">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <footer class="post__footer">
+                  <p class="post__like">Нравится: <output class="post__like-output" name="result">356</output></p>
+                </footer>
+              </div>
             </article>
           </li>
 
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
-              <header class="post__header wrapper">
+              <header class="post__header">
                 <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
               </header>
-              <section class="photo-posts__text-post wrapper">
-                <div class="post__content">
-                  <h2 class="post__author">
-                    Антон
-                    <time class="post__time" datetime="2018-09-28T22:50">(12 часов назад)</time>
-                  </h2>
-                  <p class="post__comentary">
-                    Соседи будут рады!
-                  </p>
-                </div>
-              </section>
-              <footer class="post__footer wrapper">
-                <p class="post__like">Нравится: <output class="post__like-output" name="result">666</output></p>
-              </footer>
+              <div class="post__content">
+                <h2 class="post__author">
+                  Антон
+                  <time class="post__time" datetime="2018-09-28T22:50">(12 часов назад)</time>
+                </h2>
+                <p class="post__comentary">
+                  Соседи будут рады!
+                </p>
+                <footer class="post__footer">
+                  <p class="post__like">Нравится: <output class="post__like-output" name="result">666</output></p>
+                </footer>
+              </div>
             </article>
           </li>
 
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
-              <header class="post__header wrapper">
+              <header class="post__header">
                 <img class="post__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
               </header>
-              <section class="photo-posts__text-post wrapper">
-                <div class="post__content">
-                  <h2 class="post__author">
-                    Борис
-                    <time class="post__time" datetime="2018-09-28T15:50">(20 часов назад)</time>
-                  </h2>
-                  <p class="post__comentary">
-                    Здесь могла быть ваша цитата о высоком и вечном.
-                  </p>
-                </div>
-              </section>
-              <footer class="post__footer wrapper">
-                <p class="post__like">Нравится: <output class="post__like-output" name="result">215</output></p>
-              </footer>
+              <div class="post__content">
+                <h2 class="post__author">
+                  Борис
+                  <time class="post__time" datetime="2018-09-28T15:50">(20 часов назад)</time>
+                </h2>
+                <p class="post__comentary">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <footer class="post__footer">
+                  <p class="post__like">Нравится: <output class="post__like-output" name="result">215</output></p>
+                </footer>
+              </div>
             </article>
           </li>
 
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
-              <header class="post__header wrapper">
+              <header class="post__header">
                 <img class="post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
               </header>
-              <section class="photo-posts__text-post wrapper">
-                <div class="post__content">
-                  <h2 class="post__author">
-                    Сергей
-                    <time class="post__time" datetime="2018-09-28T10:50">(25 часов назад)</time>
-                  </h2>
-                  <p class="post__comentary">
-                    Самая кубанская в мире!
-                  </p>
-                </div>
-              </section>
-              <footer class="post__footer wrapper">
-                <p class="post__like">Нравится: <output class="post__like-output" name="result">4</output></p>
-              </footer>
+              <div class="post__content">
+                <h2 class="post__author">
+                  Сергей
+                  <time class="post__time" datetime="2018-09-28T10:50">(25 часов назад)</time>
+                </h2>
+                <p class="post__comentary">
+                  Самая кубанская в мире!
+                </p>
+                <footer class="post__footer">
+                  <p class="post__like">Нравится: <output class="post__like-output" name="result">4</output></p>
+                </footer>
+              </div>
             </article>
           </li>
 
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
-              <header class="post__header wrapper">
+              <header class="post__header">
                 <img class="post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"  alt="фото пользователя">
               </header>
-              <section class="photo-posts__text-post wrapper">
-                <div class="post__content">
-                  <h2 class="post__author">
-                    Максим
-                    <time class="post__time" datetime="2018-09-27T18:50">(40 часов назад)</time>
-                  </h2>
-                  <p class="post__comentary">
-                    Где снег-то?
-                  </p>
-                </div>
-              </section>
-              <footer class="post__footer wrapper">
-                <p class="post__like">Нравится: <output class="post__like-output" name="result">150</output></p>
-              </footer>
+              <div class="post__content">
+                <h2 class="post__author">
+                  Максим
+                  <time class="post__time" datetime="2018-09-27T18:50">(40 часов назад)</time>
+                </h2>
+                <p class="post__comentary">
+                  Где снег-то?
+                </p>
+                <footer class="post__footer">
+                  <p class="post__like">Нравится: <output class="post__like-output" name="result">150</output></p>
+                </footer>
+              </div>
             </article>
           </li>
 
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
-              <header class="post__header wrapper">
+              <header class="post__header">
                 <img class="post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
               </header>
-              <section class="photo-posts__text-post wrapper">
-                <div class="post__content">
-                  <h2 class="post__author">
-                    Надежда
-                    <time class="post__time" datetime="2018-09-27T13:50">(45 чаосв назад)</time>
-                  </h2>
-                  <p class="post__comentary">
-                    Всем GM и взаимные лайки!
-                  </p>
-                </div>
-              </section>
-              <footer class="post__footer wrapper">
-                <p class="post__like">Нравится: <output class="post__like-output" name="result">2560</output></p>
-              </footer>
+              <div class="post__content">
+                <h2 class="post__author">
+                  Надежда
+                  <time class="post__time" datetime="2018-09-27T13:50">(45 чаосв назад)</time>
+                </h2>
+                <p class="post__comentary">
+                  Всем GM и взаимные лайки!
+                </p>
+                <footer class="post__footer">
+                  <p class="post__like">Нравится: <output class="post__like-output" name="result">2560</output></p>
+                </footer>
+              </div>
             </article>
           </li>
         </ul>
@@ -205,44 +205,57 @@
       <section class="your-photo">
         <div class="wrapper">
           <header class="your-photo__header promo">
-            <h2 class="promo__description">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
+            <h2 class="your-photo__slogan promo__description">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
           </header>
         </div>
 
         <div class="your-photo__new-photo">
-          <div class="wrapper">
+          <div class="your-photo__photo-container wrapper">
             <img class="your-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
-            <ul class="your-photo__tools-list tools">
-              <li class="tools__item">
-                <button class="tools__button" type="button" name="button">
-                  <img class="tools__icon" src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать">
-                </button>
-              </li>
-              <li class="tools__item">
-                <button class="tools__button" type="button" name="button">
-                  <img class="tools__icon" src="img/icon-editor-fill.svg" width="48" height="43" alt="Добавить розового">
-                </button>
-              </li>
-              <li class="tools__item">
-                <button class="tools__button" type="button" name="button">
-                  <img class="tools__icon" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
-                </button>
-              </li>
-            </ul>
 
-            <div class="range-controls">
-              <div class="range-controls__scale">
-                Здесь будет контрол
+            <div class="your-photo__tools-container">
+              <ul class="your-photo__tools-list tools">
+                <li class="tools__item">
+                  <button class="tools__button" type="button" name="button">
+                    <img class="tools__icon" src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать">
+                  </button>
+                  <div class="tool-controls range-controls">
+                    <div class="range-controls__scale"></div>
+                    <div class="range-controls__toggle"></div>
+                  </div>
+                </li>
+                <li class="tools__item tools__item--fill">
+                  <button class="tools__button" type="button" name="button">
+                    <img class="tools__icon" src="img/icon-editor-fill.svg" width="48" height="43" alt="Добавить розового">
+                  </button>
+                  <div class="tool-controls range-controls">
+                    <div class="range-controls__scale"></div>
+                    <div class="range-controls__toggle"></div>
+                  </div>
+                </li>
+                <li class="tools__item">
+                  <button class="tools__button" type="button" name="button">
+                    <img class="tools__icon" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
+                  </button>
+                  <div class="tool-controls range-controls">
+                    <div class="range-controls__scale"></div>
+                    <div class="range-controls__toggle"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="range-controls range-controls--hidden">
+                <div class="range-controls__scale"></div>
+                <div class="range-controls__toggle"></div>
               </div>
-              <div class="range-controls__toggle"></div>
+
+              <footer class="your-photo__footer">
+                <button class="your-photo__button your-photo__button--upload button button--upload" type="button" name="button">Запостить</button>
+                <button class="your-photo__button button button--cancel" type="button" name="button">Отмена</button>
+              </footer>
             </div>
           </div>
         </div>
-
-        <footer class="your-photo__footer">
-          <button class="button button--upload" type="button" name="button">Запостить</button>
-          <button class="button button--cancel" type="button" name="button">Отмена</button>
-        </footer>
       </section>
     </main>
 

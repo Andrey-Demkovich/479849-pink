@@ -1,6 +1,133 @@
 .page-header {
   background-color: #19212b;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 0 0;
+  background-position: 0 259px;
   background-repeat: no-repeat;
+}
+
+.page-header__wrap-logo-nav {
+  margin-top: -3 * 64px - 70px;
+}
+
+.page-header__wrap-header-download {
+  margin-top: 110px;
+}
+
+.page-header__image {
+  display: block;
+}
+
+.page-header__wrap-aside {
+  width: 320px;
+}
+
+.page-header__wrap--photo {
+  margin-top: 30px;
+  padding-bottom: 83px;
+}
+
+.page-header__wrap--form {
+  margin-top: 30px;
+  padding-bottom: 54px;
+}
+
+@media (min-width: 660px) {
+  .page-header {
+    // position: relative;
+    // z-index: -1;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -270px 256px;
+  }
+
+  .page-header__wrap-logo-nav {
+    margin-top: -3 * 64px - 110px;
+  }
+
+  .page-header__wrap-header-download {
+    position: relative;
+
+    display: flex;
+
+    margin-top: 74px;
+  }
+
+  .page-header__image {
+    position: absolute;
+    top: -1px;
+    right: 0;
+
+    width: 700px;
+    height: 545px;
+  }
+
+  .page-header__wrap-aside {
+    position: relative;
+    z-index: 2;
+
+    order: -1;
+
+    width: 340px;
+    padding-top: 19px;
+  }
+
+  .page-header__wrap {
+    width: 520px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-bottom: 138px;
+  }
+
+  .page-header__wrap--form {
+    padding-bottom: 78px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -680px 0;
+  }
+
+  .page-header__wrap-logo-nav {
+    margin-top: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__wrap-logo-nav-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 110px;
+    margin: 0 130px;
+  }
+
+  .page-header__wrap-header-download {
+    margin-top: 100px;
+    margin-left: 110px;
+    margin-right: 130px;
+  }
+
+  .page-header__image {
+    top: -1px;
+    right: -85px;
+
+    width: 1050px;
+    height: 645px;
+  }
+
+  .page-header__wrap-aside {
+    padding-top: 9px;
+  }
+
+  .page-header__wrap {
+    margin-top: 65px;
+    padding-bottom: 98px;
+  }
+
+  .page-header__wrap--form {
+    width: 820px;
+  }
 }

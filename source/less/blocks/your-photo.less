@@ -1,4 +1,103 @@
-.your-photo__new-photo,
-.your-photo__footer {
+.your-photo {
+  margin-bottom: 40px;
+}
+
+.your-photo__image {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.your-photo__new-photo {
+  padding-top: 20px;
   background-color: @gray;
+}
+
+.your-photo__slogan {
+  padding-top: 23px;
+  padding-bottom: 42px;
+}
+
+.your-photo__footer {
+  padding-top: 38px;
+  padding-bottom: 41px;
+}
+
+.your-photo__button--upload {
+  margin-bottom: 14px;
+}
+
+@media (min-width: 660px) {
+  .your-photo__slogan {
+    padding-top: 48px;
+    padding-bottom: 68px;
+  }
+
+  .your-photo__new-photo {
+    padding-top: 57px;
+  }
+
+  .your-photo__photo-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .your-photo__image {
+    width: 300px;
+    min-height: 400px;
+    margin-bottom: 54px;
+  }
+
+  .your-photo__tools-container {
+    width: 275px;
+  }
+
+  .your-photo__button {
+    width: 260px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .your-photo {
+    margin-bottom: 89px;
+  }
+
+  .your-photo__slogan {
+    padding-top: 8px;
+    padding-bottom: 65px;
+  }
+
+  .your-photo__new-photo {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .your-photo__photo-container {
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .your-photo__image {
+    margin-bottom: 57px;
+  }
+
+  .your-photo__tools-container {
+    width: 410px;
+    margin-top: -10px;
+  }
+
+  .your-photo__footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 119px;
+    padding-bottom: 0;
+  }
+
+  .your-photo__button {
+    width: 183px;
+  }
+
+  .your-photo__button--upload {
+    margin-bottom: 0;
+  }
 }

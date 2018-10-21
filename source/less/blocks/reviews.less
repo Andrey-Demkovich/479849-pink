@@ -1,0 +1,42 @@
+.reviews {
+  position: relative;
+}
+
+.reviews__controls {
+  margin-top: 33px;
+  margin-bottom: 68px;
+}
+
+@media (min-width: 660px) {
+  .reviews__controls {
+    margin-top: 34px;
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews {
+    position: relative;
+
+    padding-top: 186px;
+    padding-bottom: 52px;
+    padding-left: 260px;
+    padding-right: 260px;
+  }
+
+  .reviews::before {
+    content: "";
+
+    position: absolute;
+    top: 72px;
+    left: 50%;
+
+    width: 79px;
+    height: 63px;
+    margin-left: -79px / 2;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

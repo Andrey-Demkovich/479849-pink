@@ -11,8 +11,8 @@
 
 .main-nav__togle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 19px;
 
   width: 24px;
   height: 23px;
@@ -28,7 +28,7 @@
     top: 10px;
     left: -4px;
 
-    width: 33px;
+    width: 32px;
     height: 5px;
 
     background-color: #ffffff;
@@ -47,8 +47,27 @@
     background-color: rgba(210, 40, 86, 1);
   }
 
-  &:focus::before,
-  &:focus::after {
+  &:active::before,
+  &:active::after {
     background-color: @red-transparent;
+  }
+}
+
+@media (min-width: 660px) {
+  .main-nav__togle {
+    top: 44px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    background-color: transparent;
+    line-height: 18px;
+    font-weight: lighter;
+    text-transform: none;
+  }
+
+  .main-nav__togle {
+    display: none;
   }
 }

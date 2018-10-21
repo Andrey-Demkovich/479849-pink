@@ -1,5 +1,30 @@
 .logo {
   display: block;
+  padding-top: 21px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #000000;
 
   background-color: #283645;
+}
+
+@media (min-width: 660px) {
+  .logo {
+    padding-top: 27px;
+    padding-bottom: 32px;
+  }
+
+  .logo__image {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-bottom: 8px;
+    padding: 0;
+    border-bottom: none;
+
+    background-color: transparent;
+  }
 }

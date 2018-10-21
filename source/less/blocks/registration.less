@@ -1,6 +1,19 @@
 .registration {
   margin: 0;
+  padding-top: 32px;
+  padding-bottom: 24px;
   border: 0;
+}
+
+.registration__legend--contacts {
+  display: none;
+  padding: 0 7px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @red-color;
+  text-align: center;
 }
 
 .registration__list {
@@ -8,6 +21,10 @@
   padding: 0;
 
   list-style: none;
+}
+
+.registration__item {
+  margin-bottom: 16px;
 }
 
 .registration__label {
@@ -18,11 +35,121 @@
 
 .registration__input {
   width: 100%;
-  padding: 10px 5px;
+  margin-top: 5px;
+  padding: 15px 5px;
   padding-left: 22px;
   border: 2px solid #e5e5e5;
 
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+}
+
+@media (min-width: 660px) {
+  .registration {
+    padding-bottom: 0;
+  }
+
+  .registration--contacts {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 2px solid @gray;
+  }
+
+  .registration__legend--contacts {
+    display: block;
+  }
+
+  .registration__item {
+    display: flex;
+    align-items: baseline;
+
+    margin-bottom: 46px;
+  }
+
+  .registration__item--contacts {
+    position: relative;
+
+    flex-direction: column;
+
+    margin-bottom: 23px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 7px;
+      right: 2px;
+
+      width: 60px;
+      height: 60px;
+
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 22px 19px;
+    }
+  }
+
+  .registration__item--email::before {
+    background-image: url("../img/icon-mail.svg");
+    background-position: 23px 22px;
+  }
+
+  .registration__label {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  .registration__label--contacts {
+    padding-left: 17px;
+  }
+
+  .registration__input--contacts {
+    order: -1;
+
+    margin-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 65px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .registration--name {
+    margin-left: 130px;
+    margin-top: 46px;
+    margin-bottom: 12px;
+    padding: 0;
+    padding-right: 34px;
+  }
+
+  .registration--contacts {
+    width: 940px;
+    padding-top: 30px;
+  }
+
+  .registration__legend--contacts {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .registration__list--contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .registration__item--contacts {
+    margin-bottom: 10px;
+  }
+
+  .registration__label {
+    font-size: 14px;
+  }
+
+  .registration__input--contacts {
+    width: 375px;
+  }
 }
