@@ -9,7 +9,11 @@
   background-color: #283645;
 }
 
-.main-nav__togle {
+.page-header--closed .main-nav__list{
+  display: none;
+}
+
+.page-header--opened .main-nav__togle {
   position: absolute;
   top: 20px;
   right: 19px;
@@ -27,6 +31,7 @@
     position: absolute;
     top: 10px;
     left: -4px;
+    z-index: 2;
 
     width: 32px;
     height: 5px;
@@ -53,9 +58,62 @@
   }
 }
 
+.page-header--closed .main-nav__togle {
+  position: absolute;
+  top: 21px;
+  right: 19px;
+
+  width: 52px;
+  height: 24px;
+  border: 0;
+
+  background-color: transparent;
+
+  &::before{
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    z-index: 2;
+
+    width: 50px;
+    height: 3px;
+
+    background-color: #ffffff;
+    box-shadow:
+      0 -10px 0 #ffffff,
+      0 10px 0 #ffffff;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: @red-color;
+    box-shadow:
+      0 -10px 0 @red-color,
+      0 10px 0 @red-color;
+  }
+
+  &:active::before {
+    background-color: @red-transparent;
+    box-shadow:
+      0 -10px 0 @red-transparent,
+      0 10px 0 @red-transparent;
+  }
+}
+
+.page-header--nojs .main-nav__togle {
+  display: none;
+}
+
 @media (min-width: 660px) {
-  .main-nav__togle {
+  .page-header--opened .main-nav__togle {
     top: 44px;
+  }
+
+  .page-header--closed .main-nav__togle {
+    position: absolute;
+    top: 45px;
   }
 }
 
@@ -67,7 +125,12 @@
     text-transform: none;
   }
 
-  .main-nav__togle {
+  .page-header--opened .main-nav__togle,
+  .page-header--closed .main-nav__togle {
     display: none;
+  }
+
+  .page-header--closed .main-nav__list{
+    display: flex;
   }
 }

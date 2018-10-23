@@ -7,9 +7,20 @@
   background-color: #283645;
 }
 
+.page-header--closed .logo {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  padding-bottom: 12px;
+}
+
 @media (min-width: 660px) {
   .logo {
     padding-top: 27px;
+    padding-bottom: 32px;
+  }
+
+  .page-header--closed
+  .logo {
     padding-bottom: 32px;
   }
 
@@ -25,6 +36,12 @@
     padding: 0;
     border-bottom: none;
 
+    background-color: transparent;
+  }
+
+  .page-header--closed
+  .logo {
+    padding-bottom: 0px;
     background-color: transparent;
   }
 }
