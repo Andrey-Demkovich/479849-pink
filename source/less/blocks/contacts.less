@@ -36,10 +36,10 @@
 
 .contacts__item {
   margin-bottom: 20px;
-}
 
-.contacts__item:last-child {
+  &:last-child {
   margin-bottom: 0;
+  }
 }
 
 .contacts__item-container {
@@ -139,6 +139,19 @@
   .contacts__item {
     flex-grow: 1;
     margin-bottom: 42px;
+
+    &--tel {
+      max-width: 300px;
+    }
+
+    &--mail {
+      max-width: 310px;
+    }
+  }
+
+  .contacts__description--mail {
+    display: block;
+    padding-left: 20px;
   }
 
   .contacts__name {
@@ -180,7 +193,11 @@
   }
 
   .contacts__item {
-    margin-left: 20px;
+    flex-basis: 240px;
+
+    &--adress {
+      margin: 0 34px;
+    }
   }
 
   .contacts__item--mail {

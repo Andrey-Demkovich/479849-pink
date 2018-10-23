@@ -60,7 +60,11 @@
           <li class="photo-posts__item photo-posts__item--panorama">
             <article class="photo-posts__card post post--panorama">
               <header class="post__header post__header--panorama">
-                <img class="post__image post__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="фото пользователя">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+                  <img class="post__image post__image--panorama" src="img/panorama-mobile@1x.jpg" alt="фото пользователя">
+                </picture>
                 <strong class="post__panorama">Панорама дня</strong>
               </header>
               <div class="post__content post__content--panorama">
@@ -83,7 +87,11 @@
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
               <header class="post__header">
-                <img class="post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+                  <img class="post__image" src="img/photo-car-mobile@1x.jpg" alt="фото пользователя">
+                </picture>
               </header>
               <div class="post__content">
                 <h2 class="post__author">
@@ -103,7 +111,11 @@
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
               <header class="post__header">
-                <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                  <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" alt="фото пользователя">
+                </picture>
               </header>
               <div class="post__content">
                 <h2 class="post__author">
@@ -123,7 +135,11 @@
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
               <header class="post__header">
-                <img class="post__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                  <img class="post__image" src="img/photo-window-mobile@1x.jpg" alt="фото пользователя">
+                </picture>
               </header>
               <div class="post__content">
                 <h2 class="post__author">
@@ -143,7 +159,11 @@
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
               <header class="post__header">
-                <img class="post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                  <img class="post__image" src="img/photo-fair-mobile@1x.jpg" alt="фото пользователя">
+                </picture>
               </header>
               <div class="post__content">
                 <h2 class="post__author">
@@ -163,7 +183,11 @@
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
               <header class="post__header">
-                <img class="post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180"  alt="фото пользователя">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                  <img class="post__image" src="img/photo-pov-mobile@1x.jpg" alt="фото пользователя">
+                </picture>
               </header>
               <div class="post__content">
                 <h2 class="post__author">
@@ -183,7 +207,10 @@
           <li class="photo-posts__item">
             <article class="photo-posts__card post">
               <header class="post__header">
-                <img class="post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="фото пользователя">
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                <img class="post__image" src="img/photo-wing-mobile@1x.jpg" alt="фото пользователя">
+              </picture>
               </header>
               <div class="post__content">
                 <h2 class="post__author">
@@ -211,35 +238,39 @@
 
         <div class="your-photo__new-photo">
           <div class="your-photo__photo-container wrapper">
-            <img class="your-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+              <img class="your-photo__image" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
+            </picture>
+
 
             <div class="your-photo__tools-container">
               <ul class="your-photo__tools-list tools">
                 <li class="tools__item">
                   <button class="tools__button" type="button" name="button">
-                    <img class="tools__icon" src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать">
+                    <img class="tools__icon tools__icon--crop" src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезать">
                   </button>
                   <div class="tool-controls range-controls">
                     <div class="range-controls__scale"></div>
-                    <div class="range-controls__toggle"></div>
+                    <div class="range-controls__toggle range-controls__toggle--crop"></div>
                   </div>
                 </li>
                 <li class="tools__item tools__item--fill">
                   <button class="tools__button" type="button" name="button">
-                    <img class="tools__icon" src="img/icon-editor-fill.svg" width="48" height="43" alt="Добавить розового">
+                    <img class="tools__icon tools__icon--fill" src="img/icon-editor-fill.svg" width="48" height="43" alt="Добавить розового">
                   </button>
                   <div class="tool-controls range-controls">
                     <div class="range-controls__scale"></div>
-                    <div class="range-controls__toggle"></div>
+                    <div class="range-controls__toggle range-controls__toggle--fill"></div>
                   </div>
                 </li>
                 <li class="tools__item">
                   <button class="tools__button" type="button" name="button">
-                    <img class="tools__icon" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
+                    <img class="tools__icon tools__icon--contrast" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
                   </button>
                   <div class="tool-controls range-controls">
                     <div class="range-controls__scale"></div>
-                    <div class="range-controls__toggle"></div>
+                    <div class="range-controls__toggle range-controls__toggle--contrast"></div>
                   </div>
                 </li>
               </ul>
