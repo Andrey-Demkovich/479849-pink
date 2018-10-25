@@ -4,7 +4,7 @@
 
   width: 208px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
   padding: 0;
 
   list-style: none;
@@ -24,6 +24,25 @@
 
 .tool-controls {
   display: none;
+}
+
+.tools__icon {
+  fill: @red-color;
+}
+
+.tools__button--fill,
+.tools__button--contrast {
+  pointer-events: none;
+}
+
+.tools__icon--fill,
+.tools__icon--contrast {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.tools__button:hover .tools__icon,
+.tools__button:focus .tools__icon {
+  fill: rgba(40, 54, 69, 0.5);
 }
 
 @media (min-width: 660px) {
@@ -53,7 +72,13 @@
     margin: 0;
   }
 
+  .tools__button {
+    pointer-events: auto;
+  }
+
   .tools__icon {
+      fill: @red-color;
+
     &--crop {
       width: 22px;
       height: 22px;
