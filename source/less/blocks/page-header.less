@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+
   background-color: #19212b;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 259px;
@@ -53,6 +55,8 @@
 
 @media (min-width: 660px) {
   .page-header {
+    min-height: 984px;
+
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: -270px 255px;
 
@@ -74,7 +78,7 @@
   }
 
   .page-header__wrap-header-download {
-    position: relative;
+    // position: relative;
 
     display: flex;
 
@@ -122,6 +126,8 @@
 
 @media (min-width: 1200px) {
   .page-header {
+    min-height: 852px;
+
     background-color: #19212b;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: -680px 0;
@@ -160,8 +166,8 @@
   }
 
   .page-header__image {
-    top: -1px;
-    right: -126px;
+    bottom: 0;
+    right: 4px;
 
     min-width: 1050px;
     height: 645px;
