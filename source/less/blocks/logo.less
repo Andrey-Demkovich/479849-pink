@@ -13,6 +13,28 @@
   padding-bottom: 12px;
 }
 
+.logo__image {
+  margin-top: -16px;
+  margin-left: -72px;
+
+  fill: #ffffff;
+}
+
+.logo__link:hover .logo__image,
+.logo__link:focus .logo__image {
+  fill: @red-color;
+}
+
+.logo__link:active .logo__image {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.logo__image-stars,
+.logo__image-glasses,
+.logo__image-glasses-stars {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .logo {
     padding-top: 27px;
@@ -26,6 +48,12 @@
   .logo__image {
     width: 147px;
     height: 40px;
+
+    margin: 0;
+  }
+
+  .logo__image-glasses {
+    display: inline;
   }
 }
 
@@ -41,5 +69,14 @@
   .page-header--closed .logo {
     padding-bottom: 0;
     background-color: transparent;
+  }
+
+  .logo__image-glasses {
+    display: none;
+  }
+
+  .logo__image-glasses-stars,
+  .logo__image-stars {
+    display: inline;
   }
 }
