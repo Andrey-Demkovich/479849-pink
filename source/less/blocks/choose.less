@@ -102,6 +102,18 @@
   border-radius: 50%;
 }
 
+.choose__label:hover .choose__checkbox-indicator,
+.choose__label:focus .choose__checkbox-indicator,
+.choose__label:hover .choose__radio-indicator,
+.choose__label:focus .choose__radio-indicator {
+  border-color: @asphalt;
+}
+
+.choose__label:active .choose__checkbox-indicator,
+.choose__label:active .choose__radio-indicator {
+  border-color: @red-color;
+}
+
 .choose__checkbox-indicator--applecation {
   border-radius: 50%;
 }
@@ -117,6 +129,15 @@
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+
+  &:hover,
+  &:focus {
+    border-color: @asphalt;
+  }
+
+  &:active {
+    border-color: @red-color;
+  }
 }
 
 @media (min-width: 660px) {
@@ -189,7 +210,7 @@
     width: 940px;
     margin: 0 auto;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 8px;
   }
 
   .choose--emotions {
@@ -238,18 +259,26 @@
 
   .choose__item--chak {
     order: 2;
+
+    margin-left: 17px;
   }
 
   .choose__item--souvenir {
     order: 5;
+
+    margin-left: 18px;
   }
 
   .choose__item--tower {
     order: 3;
+
+    margin-left: 0;
   }
 
   .choose__item--hotel {
     order: 6;
+
+    margin-left: 0;
   }
 
   .choose__item--emotions:last-child {
