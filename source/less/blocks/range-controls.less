@@ -37,6 +37,10 @@
   background-color: #ffffff;
 
   border-radius: 50%;
+
+  &:active {
+    background-color: @red-color;
+  }
 }
 
 @media (min-width: 660px) {
@@ -55,10 +59,38 @@
       display: none;
     }
   }
+
+  .range-controls__toggle {
+    &--crop {
+      left: 73%;
+    }
+
+    &--fill {
+      left: 12%;
+    }
+
+    &--contrast {
+      left: 48%;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
   .range-controls__scale {
     width: 287px;
+  }
+
+  .range-controls__toggle {
+    &--crop {
+      left: 24%;
+    }
+
+    &--fill {
+      left: 86%;
+    }
+
+    &--contrast {
+      left: 55%;
+    }
   }
 }

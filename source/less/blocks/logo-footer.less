@@ -1,0 +1,38 @@
+.logo-footer__image-stars,
+.logo-footer__image-glasses-stars {
+  display: none;
+}
+
+.logo-footer__image-pink {
+  fill: #283645;
+}
+
+.logo-footer__image-glasses,
+.logo-footer__image-glasses-stars {
+  fill: @red-color;
+}
+
+.logo-footer:hover .logo-footer__image-pink,
+.logo-footer:focus .logo-footer__image-pink {
+  fill: @red-color;
+}
+
+.logo-footer:active .logo-footer__image-pink {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.logo-footer:active .logo-footer__image-glasses,
+.logo-footer:active .logo-footer__image-glasses-stars {
+  fill: rgba(210, 40, 86, 0.3);
+}
+
+@media (min-width: 1200px) {
+  .logo-footer__image-glasses {
+    display: none;
+  }
+
+  .logo-footer__image-stars,
+  .logo-footer__image-glasses-stars {
+    display: block;
+  }
+}
