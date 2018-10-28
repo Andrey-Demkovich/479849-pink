@@ -65,7 +65,7 @@
   }
 
   .page-header--index {
-    min-height: 984px;
+    // min-height: 984px;
   }
 
   .page-header--closed {
@@ -126,9 +126,12 @@
 
 @media (min-width: 1200px) {
   .page-header {
+    // position: relative;
+    height: 853px;
+
     background-color: #19212b;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: -680px 0;
+    background-position: center 0;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -138,7 +141,7 @@
   }
 
   .page-header--index {
-    min-height: 852px;
+    // min-height: 852px;
   }
 
   .page-header__wrap-logo-nav {
@@ -170,8 +173,8 @@
   }
 
   .page-header__image {
-    bottom: -20px;
     right: -126px;
+    bottom: 0;
 
     min-width: 1050px;
     height: 645px;
@@ -180,6 +183,7 @@
   .page-header__wrap-aside {
     width: 300px;
     padding-top: 9px;
+    padding-bottom: 123px;
   }
 
   .page-header__wrap {
