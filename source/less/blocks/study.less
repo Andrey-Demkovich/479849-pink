@@ -50,7 +50,7 @@
 
 .study__description {
   margin: 0;
-  margin-top: 11px;
+  margin-top: 9px;
   padding: 0;
   padding-right: 10px;
 
@@ -68,6 +68,10 @@
 
 @media (min-width: 660px) {
   .study {
+    display: block;
+  }
+
+  .study__container {
     display: flex;
     justify-content: space-between;
   }
@@ -75,11 +79,15 @@
 
 @media (min-width: 1200px) {
   .study {
-    padding-bottom: 68px;
-    padding-left: 130px;
-    padding-right: 130px;
+    display: block;
 
     background-color: @gray;
+  }
+
+  .study__container {
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 68px;
   }
 
   .study__clock {
@@ -87,7 +95,7 @@
   }
 
   .study__hours {
-    top: 70px;
+    top: 72px;
     left: 23px;
 
     width: 253px;
@@ -95,7 +103,7 @@
     border: 18px solid @red-color;
 
     font-size: 120px;
-    line-height: 214px;
+    line-height: 200px;
   }
 
   .study__content {

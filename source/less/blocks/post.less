@@ -17,8 +17,8 @@
 
 .post__panorama {
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: -138px;
+  right: 0;
   z-index: 100;
 
   width: 140px;
@@ -49,6 +49,7 @@
 }
 
 .post__content--panorama {
+  position: relative;
   margin: 0 20px;
 }
 
@@ -123,7 +124,7 @@
   }
 
   .post__panorama {
-    top: 57px;
+    top: -451px;
   }
 
   .post__image--panorama {
@@ -190,7 +191,7 @@
 
 @media (min-width: 1200px) {
   .post--panorama {
-    position: relative;
+    position: static;
 
     width: 940px;
     margin-left: 20px;
@@ -199,7 +200,8 @@
   }
 
   .post__header--panorama {
-    width: 1200px;
+    position: static;
+    width: 100vw;
     min-height: 506px;
   }
 
@@ -210,15 +212,15 @@
   .post__image--panorama {
     position: absolute;
     z-index: 10;
-    top: 0;
-    left: -130px;
+    top: 634px;
+    left: 0;
 
-    width: 1200px;
+    width: 100vw;
+    height: 506px;
   }
 
   .post__panorama {
-    top: 53px;
-    right: 260px;
+    top: -454px;
   }
 
   .post__content {
