@@ -103,9 +103,12 @@
 }
 
 .choose__label:hover .choose__checkbox-indicator,
-.choose__label:focus .choose__checkbox-indicator,
-.choose__label:hover .choose__radio-indicator,
-.choose__label:focus .choose__radio-indicator {
+.choose__label:hover .choose__radio-indicator {
+  border-color: @asphalt;
+}
+
+.choose__checkbox:focus + .choose__checkbox-indicator,
+.choose__checkbox:focus + .choose__radio-indicator {
   border-color: @asphalt;
 }
 
