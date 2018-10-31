@@ -105,14 +105,16 @@
 @media (min-width: 660px) {
   .post {
     width: 300px;
-    display: flex;
-    flex-direction: column;
   }
 
   .post--panorama {
     width: 660px;
 
     overflow: hidden;
+  }
+
+  .post__header--panorama {
+    margin-left: -20px;
   }
 
   .post__link-picture {
@@ -128,9 +130,6 @@
   }
 
   .post__image--panorama {
-    position: relative;
-    left: -20px;
-
     min-width: 700px;
   }
 
@@ -152,6 +151,10 @@
     min-height: 121px;
     margin: 0 20px;
     padding-right: 34px;
+  }
+
+  .post__author--panorama {
+    margin-right: auto;
   }
 
   .post__comentary {
@@ -201,8 +204,9 @@
 
   .post__header--panorama {
     position: static;
-    width: 100vw;
+
     min-height: 506px;
+    margin-left: 0;
   }
 
   .post__image {
